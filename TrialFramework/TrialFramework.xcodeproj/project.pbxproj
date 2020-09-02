@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		000DE3B924FE78C000ABAA7C /* TrialFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 000DE3B724FE78C000ABAA7C /* TrialFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0077CF6A24FFE22F00F4F683 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077CF6924FFE22F00F4F683 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		000DE3B424FE78C000ABAA7C /* TrialFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrialFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		000DE3B724FE78C000ABAA7C /* TrialFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrialFramework.h; sourceTree = "<group>"; };
 		000DE3B824FE78C000ABAA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0077CF6924FFE22F00F4F683 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				000DE3B724FE78C000ABAA7C /* TrialFramework.h */,
+				0077CF6924FFE22F00F4F683 /* Service.swift */,
 				000DE3B824FE78C000ABAA7C /* Info.plist */,
 			);
 			path = TrialFramework;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					000DE3B324FE78C000ABAA7C = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0077CF6A24FFE22F00F4F683 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		000DE3BD24FE78C000ABAA7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 45DMMAHLN5;
@@ -278,6 +284,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		000DE3BE24FE78C000ABAA7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 45DMMAHLN5;
